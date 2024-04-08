@@ -1,122 +1,102 @@
+//------------------ FACILE -------------------------------------------------
+
 [
-{
-    "Question": "Combien ya il de jour dans l'année ?",
-    "Proposition": ["367", "365" , "380"],
-    "Reponse": 1,
-    "Niveau": "Facile",
-    "Categorie": "Generale"
-},
-
-
-
-{
-    "Question": "Quelle est la formule chimique de l'eau oxygénée ?",
-    "Proposition": ["CO2", "H2O", "H2O2"],
-    "Reponse": 1,
-    "Niveau": "Facile",
-    "Categorie": "Science"
-},
-
-
-
-{
-    "Question": "Quel est la capital de l'Algerie",
-    "Proposition": ["Alger", "Paris", "Washington"],
-    "Reponse": 0,
-    "Niveau": "Facile",
-    "Categorie": "Geographie"
-},
-
-
-
-
-{
-    "Question": "Quel a été le premier présdent des Etats-Unis ?",
-    "Proposition": ["George Washington", "Abraham Licoln", "David Guetta"],
-    "Reponse": 0,
-    "Niveau": "Facile",
-    "Categorie": "Histoire"
-},
-
-//---------------------------------------------------------------------
-
-
-
-{
-    "Question": "Quel est le nom du célèbre tableau peint par Leonardo da Vinci représentant une femme au sourire énigmatique ?",
-    "Proposition": ["La Nuit étoilée", "Les Tournesols", "La Joconde"],
-    "Reponse": 2,
-    "Niveau": "Moyen",
-    "Categorie": "Generale"
-},
-
-
-
-
-{
-    "Question": "Quel est l'organe du corps humain responsable de la production de l'insuline ?",
-    "Proposition": ["Le pancréas", "Le foie", "Les reins"],
-    "Reponse": 0,
-    "Niveau": "Moyen",
-    "Categorie": "Science"
-},
-
-
-
-{
-    "Question": "Quel est le plus grand lac d'eau douce en superficie ?",
-    "Proposition": ["Lac Victoria", "Lac Supérieur", "Lac Baikal"],
-    "Reponse": 2,
-    "Niveau": "Moyen",
-    "Categorie": "Geographie"
-},
-
-
-
-{
-    "Question": "Quel événement a marqué le début de la Révolution française en 1789 ?",
-    "Proposition": ["La prise de la Bastille", "L'exécution de Louis XVI", "La déclaration des droits de l'homme et du citoyen"],
-    "Reponse": 0,
-    "Niveau": "Moyen",
-    "Categorie": "Histoire"
-},
-
-
-
-// ---------------------------------------------------------------------
-
-{
-    "Question": "Qui a écrit le livre 'Cent ans de solitude' ?",
-    "Proposition": ["Gabriel García Márquez", "Jorge Luis Borges", "Mario Vargas Llosa"],
-    "Reponse": 0,
-    "Niveau": "Difficile",
-    "Categorie": "Generale"
-},
-
-
-{
-    "Question": " Quelle est l'unité de mesure utilisée pour exprimer la quantité de matière en chimie ?",
-    "Proposition": ["Le mètre", "Le kilogramme", "La mole"],
-    "Reponse": 2,
-    "Niveau": "Difficile",
-    "Categorie": "Science"
-},
-
-
-{
-    "Question": "Quel est le point culminant de l'Afrique ?",
-    "Proposition": ["Le Kilimandjaro", "Le mont Kenya", "Le mont Cameroun"],
-    "Reponse": 0,
-    "Niveau": "Difficile",
-    "Categorie": "Geographie"
-},
-
-
-{
-    "Question": "Qui a été le premier empereur de la dynastie Ming en Chine ?",
-    "Proposition": ["Kubilai Khan", "Zheng He", "Hongwu"],
-    "Reponse": 2,
-    "Niveau": "Difficile",
-    "Categorie": "Histoire"
-},
-]
+  {
+      "Question": "Combien ya il de jour dans l'année ?",
+      "Proposition": ["367", "365" , "380"],
+      "Reponse": 1,
+      "Niveau": "Facile",
+      "Categorie": "Generale"
+  },
+  {
+      "Question": "Quelle est la formule chimique de l'eau oxygénée ?",
+      "Proposition": ["CO2", "H2O", "H2O2"],
+      "Reponse": 1,
+      "Niveau": "Facile",
+      "Categorie": "Science"
+  },
+  {
+      "Question": "Quel est la capital de l'Algerie",
+      "Proposition": ["Alger", "Paris", "Washington"],
+      "Reponse": 0,
+      "Niveau": "Facile",
+      "Categorie": "Geographie"
+  },
+  {
+      "Question": "Quel a été le premier présdent des Etats-Unis ?",
+      "Proposition": ["George Washington", "Abraham Licoln", "David Guetta"],
+      "Reponse": 0,
+      "Niveau": "Facile",
+      "Categorie": "Histoire"
+  },
+  
+  
+  
+  //------------------ MOYEN ---------------------------------------------------
+  
+  
+  
+  {
+      "Question": "Quel est le nom du célèbre tableau peint par Leonardo da Vinci représentant une femme au sourire énigmatique ?",
+      "Proposition": ["La Nuit étoilée", "Les Tournesols", "La Joconde"],
+      "Reponse": 2,
+      "Niveau": "Moyen",
+      "Categorie": "Generale"
+  },
+  {
+      "Question": "Quel est l'organe du corps humain responsable de la production de l'insuline ?",
+      "Proposition": ["Le pancréas", "Le foie", "Les reins"],
+      "Reponse": 0,
+      "Niveau": "Moyen",
+      "Categorie": "Science"
+  },
+  {
+      "Question": "Quel est le plus grand lac d'eau douce en superficie ?",
+      "Proposition": ["Lac Victoria", "Lac Supérieur", "Lac Baikal"],
+      "Reponse": 2,
+      "Niveau": "Moyen",
+      "Categorie": "Geographie"
+  },
+  {
+      "Question": "Quel événement a marqué le début de la Révolution française en 1789 ?",
+      "Proposition": ["La prise de la Bastille", "L'exécution de Louis XVI", "La déclaration des droits de l'homme et du citoyen"],
+      "Reponse": 0,
+      "Niveau": "Moyen",
+      "Categorie": "Histoire"
+  },
+  
+  
+  
+  // ------------------ DIFFICILE---------------------------------------------------
+  
+  
+  
+  {
+      "Question": "Qui a écrit le livre 'Cent ans de solitude' ?",
+      "Proposition": ["Gabriel García Márquez", "Jorge Luis Borges", "Mario Vargas Llosa"],
+      "Reponse": 0,
+      "Niveau": "Difficile",
+      "Categorie": "Generale"
+  },
+  {
+      "Question": " Quelle est l'unité de mesure utilisée pour exprimer la quantité de matière en chimie ?",
+      "Proposition": ["Le mètre", "Le kilogramme", "La mole"],
+      "Reponse": 2,
+      "Niveau": "Difficile",
+      "Categorie": "Science"
+  },
+  {
+      "Question": "Quel est le point culminant de l'Afrique ?",
+      "Proposition": ["Le Kilimandjaro", "Le mont Kenya", "Le mont Cameroun"],
+      "Reponse": 0,
+      "Niveau": "Difficile",
+      "Categorie": "Geographie"
+  },
+  {
+      "Question": "Qui a été le premier empereur de la dynastie Ming en Chine ?",
+      "Proposition": ["Kubilai Khan", "Zheng He", "Hongwu"],
+      "Reponse": 2,
+      "Niveau": "Difficile",
+      "Categorie": "Histoire"
+  }
+]  
