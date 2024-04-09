@@ -1,0 +1,114 @@
+
+[
+    
+    {
+        "question": "Combien ya il de jour dans l'année ?",
+        "propositions": ["1 - 367", "2 - 365" , "3 - 380"],
+        "reponse": 2,
+        "niveau": 1,
+        "categorie": "Generale"
+    },
+    {
+        "question": "Quelle est la formule chimique de l'eau ?",
+        "propositions": ["1 - CO2", "2 - H2O", "3 - H2O2"],
+        "reponse": 2,
+        "niveau": 1,
+        "categorie": "Science"
+    },
+    {
+        "question": "Quel est la capital de l'Algerie",
+        "propositions": ["1 - Alger", "2 - Paris", "3 - Washington"],
+        "reponse": 1,
+        "niveau": 1,
+        "categorie": "Geographie"
+    },
+    {
+        "question": "Quel a été le premier présdent des Etats-Unis ?",
+        "propositions": ["1 - George Washington", "2 - Abraham Licoln", "3 - David Guetta"],
+        "reponse": 1,
+        "niveau": 1,
+        "categorie": "Histoire"
+    },
+    
+    
+
+
+
+
+
+
+
+
+
+    
+   
+    {
+        "question": "Quel est le nom du célèbre tableau peint par Leonardo da Vinci représentant une femme au sourire énigmatique ?",
+        "propositions": ["1 - La Nuit étoilée", "2 - Les Tournesols", "3 - La Joconde"],
+        "reponse": 3,
+        "niveau": 2,
+        "categorie": "Generale"
+    },
+    {
+        "question": "Quel est l'organe du corps humain responsable de la production de l'insuline ?",
+        "propositions": ["1 - Le pancréas", "2 - Le foie", "3 - Les reins"],
+        "reponse": 1,
+        "niveau": 2,
+        "categorie": "Science"
+    },
+    {
+        "question": "Quel est le plus grand lac d'eau douce en superficie ?",
+        "propositions": ["1 - Lac Victoria", "2 - Lac Supérieur", "3 - Lac Baikal"],
+        "reponse": 3,
+        "niveau": 2,
+        "categorie": "Geographie"
+    },
+    {
+        "question": "Quel événement a marqué le début de la Révolution française en 1789 ?",
+        "propositions": ["1 - La prise de la Bastille", "2 - L'exécution de Louis XVI", "3 - La déclaration des droits de l'homme et du citoyen"],
+        "reponse": 1,
+        "niveau": 2,
+        "categorie": "Histoire"
+    },
+    
+    
+    
+   
+
+
+
+
+
+
+
+    
+    
+    {
+        "question": "Qui a écrit le livre 'Cent ans de solitude' ?",
+        "propositions": ["1 - Gabriel García Márquez", "2 - Jorge Luis Borges", "3 - Mario Vargas Llosa"],
+        "reponse": 1,
+        "niveau": 3,
+        "categorie": "Generale"
+    },
+    {
+        "question": " Quelle est l'unité de mesure utilisée pour exprimer la quantité de matière en chimie ?",
+        "propositions": ["1 - Le mètre", "2 - Le kilogramme", "L3 - a mole"],
+        "reponse": 3,
+        "niveau": 3,
+        "categorie": "Science"
+    },
+    {
+        "question": "Quel est le point culminant de l'Afrique ?",
+        "propositions": ["1 - Le Kilimandjaro", "2 - Le mont Kenya", "3 - Le mont Cameroun"],
+        "reponse": 1,
+        "niveau": 3,
+        "categorie": "Geographie"
+    },
+    {
+        "question": "Qui a été le premier empereur de la dynastie Ming en Chine ?",
+        "propositions": ["1 - Kubilai Khan", "2 - Zheng He", "3 - Hongwu"],
+        "reponse": 3,
+        "niveau": 3,
+        "categorie": "Histoire"
+    }
+  ]  
