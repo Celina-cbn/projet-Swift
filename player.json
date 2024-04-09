@@ -1,4 +1,63 @@
-{
-  "difficulty" : 3,
-  "name" : "bssb"
-}
+[
+  {
+    "name" : "azou",
+    "score" : 2,
+    "difficulty" : 1
+  },
+  {
+    "name" : "azul ",       
+    "score" : 1,
+    "difficulty" : 1
+  },
+  {
+    "name" : "kabylie",
+    "score" : 0,
+    "difficulty" : 1
+  },
+
+
+
+
+
+  {
+    "name" : "bob",
+    "score" : 4,
+    "difficulty" : 2
+  },
+  {
+    "name" : "mel",
+    "score" : 0,         
+    "difficulty" : 2
+  },
+  {
+    "name" : "azaria",
+    "score" : 1,
+    "difficulty" : 2
+  },
+
+
+
+
+
+
+  {
+    "name" : "alilou",
+    "score" : 0,
+    "difficulty" : 3
+  },
+  {
+    "name" : "moi",
+    "score" : 1,       
+    "difficulty" : 3
+  },
+  {
+    "name" : "lynda",
+    "score" : 1,
+    "difficulty" : 3
+  },
+  {
+    "name" : "jack",
+    "score" : 3,
+    "difficulty" : 3
+  }
+]

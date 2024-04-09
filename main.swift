@@ -27,7 +27,6 @@ struct Player: Codable{
 // --------------------------------- P L A Y E R ---------------------------------------
 
 
-
 // creer un gamer
 func createGamer() -> Player{
 
@@ -101,7 +100,7 @@ func savePlayerInJson(player: Player) {
 
 
 
-// ---------------------- Q U E S T I O N -----------------------------------------------------
+// ------------------------- Q U E S T I O N -----------------------------------------------------
 
 
 
@@ -121,7 +120,6 @@ func getQuestions(forLevel level: Int, fromJSON json: Data) -> [(question: Strin
     }
     return questionsAndPropositions
 }
-
 
 
 
@@ -165,7 +163,43 @@ func writeQuestions(player: inout Player, questions: [(question: String, proposi
 
 
 
-// ------------------------------- A F F I C H E-----------------------------------
+// ------------------------G E T  P L A Y E R S------------------------------------------
+
+
+func getPlayer(forLevel level: Int, fromJSON json: Data) -> [(name: String, score: Int)] {
+
+    var players: [(name: String, score: Int)] = []
+    do {
+        let OnePlayers = try JSONDecoder().decode([Player].self, from: json)
+        for player in OnePlayers {
+            if player.difficulty == level {
+                players.append((player.name, player.score))
+            }
+        }
+    } catch {
+        print("Erreur lors du décodage du JSON :", error)
+    }
+    return players
+}
+
+//-------------------- A F F I C H E R   P L A Y E R S --------------------------------
+            
+            
+func printPlayer(players myPlayers:[(name :String, score:Int)]){
+
+        for (name, score) in myPlayers {
+            print(" \(name)  \(score) ")
+        }
+}
+
+//----------------------------- T R I E R  -----------------------------------------------
+
+func playerDescending(_ players: [(name: String, score: Int)]) -> [(name: String, score: Int)] {
+    return players.sorted(by: { $0.score > $1.score })
+}
+
+
+// ---------------------- A F F I C H E R    S C O R E S -----------------------------------
 
 
 // afficher des joueur 
@@ -175,40 +209,64 @@ func afficherClassement(){
     print("           SWIFT QUIZ GAME                ")
     print(" ---------------------------------------  ")
     print("       - - -   CLASSEMENT   - - -         ")
-    print(" ---------------------------------------\n")
+    print(" -----------------------------------------")
 
 
 
 
-    print(" ---------------------------------------  ")    
-    print("          - - -   FACILE   - - -          ")
-    print(" ---------------------------------------  ")
+        var jsonData: Data
 
+        // Charger les données JSON depuis le fichier "questions.json"
+        let fileManager = FileManager.default
+        let currentPath = fileManager.currentDirectoryPath
+        let filePath = URL(fileURLWithPath: currentPath).appendingPathComponent("player.json")
 
+    do {
+        // Affichage pour le niveau facile
+        jsonData = try Data(contentsOf: filePath)
+        let myPlayersFacile = getPlayer(forLevel: 1, fromJSON: jsonData)
+        let sortedPlayerFacile = playerDescending(myPlayersFacile)
+        print(" ---------------------------------------  ")
+        print("          - - -   FACILE   - - -          ")
+        print(" ---------------------------------------  ")
+        printPlayer(players: sortedPlayerFacile)
+    } catch {
+        print("Error loading JSON file:", error)
+        return
+    }
 
+    do {
+        // Affichage pour le niveau moyen
+        jsonData = try Data(contentsOf: filePath)
+        let myPlayersMoyen = getPlayer(forLevel: 2, fromJSON: jsonData)
+        let sortedPlayerMoyen = playerDescending(myPlayersMoyen)
+        print(" ---------------------------------------  ")
+        print("          - - -   MOYEN   - - -           ")
+        print(" ---------------------------------------  ")
+        printPlayer(players: sortedPlayerMoyen)
+    } catch {
+        print("Error loading JSON file:", error)
+        return
+    }
 
-    print(" ---------------------------------------  ")
-    print("          - - -   MOYEN   - - -           ")
-    print(" ---------------------------------------  ")
-
-
-
-
-
-    print(" ---------------------------------------  ")    
-    print("          - - -   DIFFICILE   - - -       ")
-    print(" ---------------------------------------  ")
-
-
-
+    do {
+        // Affichage pour le niveau difficile
+        jsonData = try Data(contentsOf: filePath)
+        let myPlayersDifficile = getPlayer(forLevel: 3, fromJSON: jsonData)
+        let sortedPlayerDifficile = playerDescending(myPlayersDifficile)
+        print(" ---------------------------------------  ")
+        print("          - - -   DIFFICILE   - - -       ")
+        print(" ---------------------------------------  ")
+        printPlayer(players: sortedPlayerDifficile)
+    } catch {
+        print("Error loading JSON file:", error)
+        return
+    }
 
 }
 
 
 // ----------------------------------- M A I N ----------------------------------------------
-
-
-
 
 func main() {
     print(" ---------------------------------------  ")
@@ -240,6 +298,17 @@ func main() {
         } catch {
             print("Error loading JSON file:", error)
             return
+        }
+/*
+ facile  -- >  1 point par bonne reponse
+ moyen   -- >  2
+ difficile   -- >  3
+*/
+        if player.difficulty==2 {
+            player.score*=2
+        }
+        if player.difficulty==3 {
+            player.score*=3
         }
 
         //savePlayerInJson(player: player)
@@ -304,3 +373,8 @@ func main() {
 
 // Appel de la fonction principale
 main()
+
+
+
+
+
